@@ -2,6 +2,6 @@
   "name": "agentbuddy",
   "private": true,
   "version": "0.1.0",
-  "workspaces": ["apps/*", "services/*", "packages/*", "infra/*", "tests/*"],
-  "packageManager": "pnpm@latest"
+  "workspaces": ["apps/*", "services/*", "packages/*", "infra/*", "tests/*"]
 }
+
