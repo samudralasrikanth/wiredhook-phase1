@@ -12,12 +12,12 @@ create table if not exists public.tasks (
 
 -- Simple trigger to update updated_at
 create or replace function public.set_updated_at()
-returns trigger as 15249
+returns trigger as $$
 begin
   new.updated_at = now();
   return new;
 end;
-15249 language plpgsql;
+$$ language plpgsql;
 
 drop trigger if exists trg_tasks_updated_at on public.tasks;
 create trigger trg_tasks_updated_at
